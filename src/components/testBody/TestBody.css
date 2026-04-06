@@ -213,6 +213,146 @@
   background: rgba(255, 255, 255, 0.25);
 }
 
+/* ── Name screen ─────────────────────────────────────────── */
+
+.name-screen {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  color: #fff;
+}
+
+.name-screen__title {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.name-screen__sub {
+  margin: 0;
+  color: rgba(255,255,255,0.6);
+  font-size: 1rem;
+}
+
+.name-screen__input {
+  background: rgba(255,255,255,0.1);
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 12px 20px;
+  width: 280px;
+  outline: none;
+  text-align: center;
+  transition: border-color 0.2s;
+}
+
+.name-screen__input::placeholder {
+  color: rgba(255,255,255,0.4);
+}
+
+.name-screen__input:focus {
+  border-color: rgba(255,255,255,0.7);
+}
+
+.name-screen__btn {
+  padding: 13px 40px;
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.name-screen__btn:hover:not(:disabled) {
+  background: rgba(255,255,255,0.25);
+}
+
+.name-screen__btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+/* ── Result extras ───────────────────────────────────────── */
+
+.result__name {
+  margin: 0;
+  font-size: 1.4rem;
+  color: rgba(255,255,255,0.7);
+}
+
+.result__btn--secondary {
+  padding: 10px 32px;
+  background: transparent;
+  color: rgba(255,255,255,0.7);
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 10px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.result__btn--secondary:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* ── Top 10 ──────────────────────────────────────────────── */
+
+.top {
+  width: 320px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.top__empty {
+  color: rgba(255,255,255,0.4);
+  text-align: center;
+  padding: 8px;
+}
+
+.top__row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.05);
+}
+
+.top__row--me {
+  background: rgba(46,204,113,0.2);
+  outline: 1px solid #2ecc71;
+}
+
+.top__place {
+  color: rgba(255,255,255,0.4);
+  font-size: 13px;
+  width: 28px;
+}
+
+.top__name {
+  flex: 1;
+  color: #fff;
+  font-size: 15px;
+}
+
+.top__score {
+  color: #2ecc71;
+  font-weight: 700;
+  font-size: 15px;
+}
+
 /* ── Mobile ──────────────────────────────────────────────── */
 
 @media (max-width: 520px) {
