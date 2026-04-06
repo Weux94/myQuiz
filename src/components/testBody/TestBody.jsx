@@ -5,8 +5,15 @@ import './TestBody.css';
 const ANIMATION_DURATION = 600;
 const GAME_SIZE = 15;
 
+function shuffle(arr) {
+  return [...arr].sort(() => Math.random() - 0.5);
+}
+
 function pickRandom(arr, count) {
-  return [...arr].sort(() => Math.random() - 0.5).slice(0, count);
+  return shuffle(arr).slice(0, count).map(q => ({
+    ...q,
+    answers: shuffle(q.answers),
+  }));
 }
 
 export default function TestBody() {
