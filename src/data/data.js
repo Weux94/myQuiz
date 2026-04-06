@@ -226,5 +226,50 @@ const questions = [
     { text: '360', isCorrect: false },
   ],
 },
+  {
+    question: "Какой химический элемент является самым распространенным во Вселенной?",
+    answers: [
+      { text: "Кислород", isCorrect: false },
+      { text: "Водород", isCorrect: true },
+      { text: "Гелий", isCorrect: false },
+      { text: "Углерод", isCorrect: false },
+    ],
+  },
+  {
+    question: "В какой стране находится самое глубокое озеро в мире — Байкал?",
+    answers: [
+      { text: "Россия", isCorrect: true },
+      { text: "Канада", isCorrect: false },
+      { text: "Китай", isCorrect: false },
+      { text: "США", isCorrect: false },
+    ],
+  },
+  {
+    question: "Кто из этих художников написал знаменитую картину «Мона Лиза»?",
+    answers: [
+      { text: "Микеланджело", isCorrect: false },
+      { text: "Пабло Пикассо", isCorrect: false },
+      { text: "Леонардо да Винчи", isCorrect: true },
+      { text: "Винсент ван Гог", isCorrect: false },
+    ],
+  },
+  {
+    question: "Какое количество планет в Солнечной системе (согласно текущему определению МАС)?",
+    answers: [
+      { text: "7", isCorrect: false },
+      { text: "9", isCorrect: false },
+      { text: "8", isCorrect: true },
+      { text: "10", isCorrect: false },
+    ],
+  },
+  {
+    question: "В каком году произошел первый полет человека в космос?",
+    answers: [
+      { text: "1957", isCorrect: false },
+      { text: "1961", isCorrect: true },
+      { text: "1969", isCorrect: false },
+      { text: "1953", isCorrect: false },
+    ],
+  },
 ];
 export default questions;
