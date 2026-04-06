@@ -452,6 +452,95 @@ const questions = [
       { text: "Голубь", isCorrect: true },
       { text: "Аист", isCorrect: false },
     ],
+  },{
+    question: "Как называется суп из свеклы в славянской кухне?",
+    answers: [
+      { text: "Щи", isCorrect: false },
+      { text: "Борщ", isCorrect: true },
+      { text: "Рассольник", isCorrect: false },
+      { text: "Солянка", isCorrect: false },
+    ],
+  },
+  {
+    question: "Какое животное называют «кораблем пустыни»?",
+    answers: [
+      { text: "Слон", isCorrect: false },
+      { text: "Верблюд", isCorrect: true },
+      { text: "Осел", isCorrect: false },
+      { text: "Зебра", isCorrect: false },
+    ],
+  },
+  {
+    question: "Сколько сторон у квадрата?",
+    answers: [
+      { text: "3", isCorrect: false },
+      { text: "4", isCorrect: true },
+      { text: "5", isCorrect: false },
+      { text: "6", isCorrect: false },
+    ],
+  },
+  {
+    question: "Какая планета третья по счету от Солнца?",
+    answers: [
+      { text: "Венера", isCorrect: false },
+      { text: "Марс", isCorrect: false },
+      { text: "Земля", isCorrect: true },
+      { text: "Сатурн", isCorrect: false },
+    ],
+  },
+  {
+    question: "Как называется металл, из которого делают большинство монет?",
+    answers: [
+      { text: "Золото", isCorrect: false },
+      { text: "Медь", isCorrect: true },
+      { text: "Ртуть", isCorrect: false },
+      { text: "Натрий", isCorrect: false },
+    ],
+  },
+  {
+    question: "В какой стране находится Великая Китайская стена?",
+    answers: [
+      { text: "Япония", isCorrect: false },
+      { text: "Индия", isCorrect: false },
+      { text: "Китай", isCorrect: true },
+      { text: "Корея", isCorrect: false },
+    ],
+  },
+  {
+    question: "Какое насекомое превращается из гусеницы?",
+    answers: [
+      { text: "Кузнечик", isCorrect: false },
+      { text: "Бабочка", isCorrect: true },
+      { text: "Муравей", isCorrect: false },
+      { text: "Пчела", isCorrect: false },
+    ],
+  },
+  {
+    question: "Как называется столица Великобритании?",
+    answers: [
+      { text: "Ливерпуль", isCorrect: false },
+      { text: "Манчестер", isCorrect: false },
+      { text: "Лондон", isCorrect: true },
+      { text: "Эдинбург", isCorrect: false },
+    ],
+  },
+  {
+    question: "Какой инструмент используют для забивания гвоздей?",
+    answers: [
+      { text: "Отвертка", isCorrect: false },
+      { text: "Пила", isCorrect: false },
+      { text: "Молоток", isCorrect: true },
+      { text: "Плоскогубцы", isCorrect: false },
+    ],
+  },
+  {
+    question: "Сколько минут в одном часе?",
+    answers: [
+      { text: "50", isCorrect: false },
+      { text: "60", isCorrect: true },
+      { text: "100", isCorrect: false },
+      { text: "24", isCorrect: false },
+    ],
   },
   {
     question: "В каком году произошел распад СССР?",
