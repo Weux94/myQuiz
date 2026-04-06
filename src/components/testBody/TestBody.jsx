@@ -44,21 +44,20 @@ export default function TestBody() {
   }, [isFinished]);
 
   useEffect(() => {
-    if (phase !== 'playing' || isAnimating) return;
+    if (phase !== 'playing') return;
     setTimeLeft(QUESTION_TIME);
     clearInterval(timerRef.current);
     timerRef.current = setInterval(() => {
-      setTimeLeft(prev => {
-        if (prev <= 1) {
-          clearInterval(timerRef.current);
-          handleAnswer(false);
-          return QUESTION_TIME;
-        }
-        return prev - 1;
-      });
+      setTimeLeft(prev => (prev <= 1 ? 0 : prev - 1));
     }, 1000);
     return () => clearInterval(timerRef.current);
-  }, [index, phase, isAnimating]);
+  }, [index, phase]);
+
+  useEffect(() => {
+    if (timeLeft !== 0 || phase !== 'playing' || isAnimating) return;
+    clearInterval(timerRef.current);
+    handleAnswer(false);
+  }, [timeLeft]);
 
   function handleStart() {
     if (!name.trim()) return;
